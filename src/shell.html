@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aura & Co.</title>
+<meta name="description" content="Specialised and unique decor and gifting for the hospitality, corporate and retail sector. Trade accounts, nationwide courier delivery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/*CSS*/
+</style>
+</head>
+<body>
+<div class="announce" id="announce"></div>
+<div class="demo" id="demoBar" hidden></div>
+
+<header class="site">
+  <div class="wrap bar">
+    <button class="ibtn burger" data-act="toggle-menu" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+    <a class="logo" href="#home" aria-label="Aura &amp; Co. home">Aura <i>&amp;</i> Co.</a>
+    <nav class="main" id="mainNav" aria-label="Main">
+      <div class="has-menu">
+        <a href="#shop">Shop</a>
+        <div class="menu" id="menuCats"></div>
+      </div>
+      <a href="#cat-gifting">Gifting</a>
+      <a href="#trade">Trade</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="icons">
+      <button class="ibtn" data-act="toggle-search" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg></button>
+      <a class="ibtn" href="#account" id="acctLink" aria-label="My account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.5 3.6-7 8-7s8 2.5 8 7"/></svg><span class="count" id="acctDot" hidden style="min-width:10px;width:10px;height:10px;padding:0;top:6px;right:6px;background:#2BB673"></span></a>
+      <button class="ibtn" data-act="open-cart" aria-label="Open cart"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg><span class="count" id="cartCount">0</span></button>
+    </div>
+  </div>
+  <div class="searchrow" id="searchRow"><div class="wrap"><input id="searchInput" type="search" placeholder="Search vases, cushions, candles…" aria-label="Search products"></div></div>
+</header>
+
+<main id="app"></main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fcols">
+      <div>
+        <div class="logo">Aura <i>&amp;</i> Co.</div>
+        <p>Specialised and unique decor and gifting for the hospitality, corporate and retail sector. Delivered across South Africa.</p>
+        <div class="pay" aria-label="Payment options"><span>Card</span><span>Instant EFT</span><span>Bank transfer</span><span>Trade accounts</span></div>
+      </div>
+      <div><h4>Shop</h4><div id="footCats"></div></div>
+      <div><h4>Help</h4><a href="#trade">Trade accounts</a><a href="#delivery">Delivery &amp; returns</a><a href="#contact">Contact us</a><a href="#about">About Aura &amp; Co.</a><a href="#privacy">Privacy</a></div>
+      <div><h4>Contact</h4><div id="footContact"></div></div>
+    </div>
+    <div class="legal"><span>© 2026 Aura &amp; Co. All rights reserved.</span><span id="vatNote"></span></div>
+  </div>
+</footer>
+
+<div class="backdrop" id="backdrop" data-act="close-cart"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <header><h2>Your cart</h2><button class="ibtn" data-act="close-cart" aria-label="Close cart"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg></button></header>
+  <div class="drawer-body" id="drawerBody"></div>
+  <footer id="drawerFoot"></footer>
+</aside>
+
+<div class="modal" id="payModal" role="dialog" aria-modal="true" aria-label="Payment"><div class="box" id="payBox"></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript><p style="padding:40px;text-align:center">Aura &amp; Co. needs JavaScript to run the store.</p></noscript>
+
+<script>
+/*MANIFEST*/
+</script>
+<script>
+/*CORE*/
+</script>
+<script>
+/*APP*/
+</script>
+</body>
+</html>
